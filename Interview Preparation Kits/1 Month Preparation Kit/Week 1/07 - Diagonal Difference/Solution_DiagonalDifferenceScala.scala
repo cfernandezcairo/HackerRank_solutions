@@ -18,7 +18,7 @@ import scala.sys.*
 import scala.util.matching.*
 import scala.reflect.*
 
-object Result {
+object Result_DF {
 
   /*
    * Complete the 'diagonalDifference' function below.
@@ -57,7 +57,7 @@ object Solution_DiagonalDifferenceScala {
       arr(i) = StdIn.readLine.replaceAll("\\s+$", "").split(" ").map(_.trim.toInt)
     }
 
-    val result = Result.diagonalDifference_cfernandezcairo(arr)
+    val result = Result_DF.diagonalDifference_cfernandezcairo(arr)
 
     printWriter.println(result)
 
