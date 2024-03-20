@@ -50,6 +50,7 @@ public class JumpingOnTheClouds_Solution {
         }
         System.out.println(jumps);
 
-        System.out.println(jumping_cfernandezcairo(cloud));
+        List<Integer> newCloud = Arrays.stream(cloud).mapToObj(c -> Integer.valueOf(c)).toList();
+        System.out.println(jumping_cfernandezcairo(newCloud));
     }
 }
