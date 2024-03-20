@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
 // If a PatternSyntaxException is not thrown by Pattern.compile, the regular expresion is valid
-public class Solution {
+public class PatterSyntaxChecker_Solution {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int testCases = scan.nextInt();

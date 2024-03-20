@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Solution {
+public class StringTokens_Solution {
     public static void main(String[] args) {
         /* Read input */
         Scanner scan = new Scanner(System.in);

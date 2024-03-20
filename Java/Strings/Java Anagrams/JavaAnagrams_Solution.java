@@ -1,9 +1,8 @@
 // github.com/RodneyShag
 
-import java.io.*;
 import java.util.*;
 
-public class Solution {
+public class JavaAnagrams_Solution {
     //  Time Complexity: O(n) using a HashMap
     // Space Complexity: O(n)
     static boolean isAnagram(String a, String b) {

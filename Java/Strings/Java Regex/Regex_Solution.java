@@ -1,10 +1,8 @@
 // github.com/RodneyShag
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 import java.util.Scanner;
 
-class Solution {
+class Regex_Solution {
     public static void main(String []args) {
         Scanner in = new Scanner(System.in);
         while(in.hasNext()) {

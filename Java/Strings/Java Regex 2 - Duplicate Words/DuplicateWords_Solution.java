@@ -35,7 +35,7 @@ The ?: is added to make it a "non-capturing group" (meaning you can't do .group(
 
 */
 
-public class DuplicateWords {
+public class DuplicateWords_Solution {
 
     public static void main(String[] args) {
 
