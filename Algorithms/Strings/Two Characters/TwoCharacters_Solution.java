@@ -27,7 +27,7 @@ Our final answer is the maximum value in our "int[26][26] count" array.
 
 */
 
-public class Solution {
+public class TwoCharacters_Solution {
     
     public static final int NUM_LETTERS = 26;
     

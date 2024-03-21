@@ -6,7 +6,7 @@ import java.util.Scanner;
 // characters at opposite ends of the String. We then move inwards until we consider
 // all palindromic pairs.
 
-public class Solution {
+public class LoveLetterMystery_Solution {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int T = scan.nextInt();

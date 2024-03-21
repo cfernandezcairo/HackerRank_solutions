@@ -7,7 +7,7 @@ import java.util.Scanner;
 //    use Rule #2 to append it to "p" at no charge
 //  - To get our final answer, we count the number of distinct characters in "s"
 
-public class Solution {
+public class StringConstruction_Solution {
     static long stringConstruction(String s) {
         return s.chars().distinct().count();
     }

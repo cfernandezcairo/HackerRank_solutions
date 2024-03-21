@@ -6,7 +6,7 @@ import java.util.Scanner;
 //       - An easy way to count the number of steps is to change each 010 to 01 instead, 
 //         and to compare the length of the resulting string with the original string
 
-public class Solution {
+public class BeautifulBinaryString_Solution {
     static int minSteps(String B) {
         return B.length() - B.replace("010","01").length();
     }

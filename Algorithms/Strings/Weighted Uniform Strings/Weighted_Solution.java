@@ -8,7 +8,7 @@ import java.util.HashSet;
 //  Time complexity: O(n)
 // Space complexity: O(n)
 
-public class Solution {
+public class Weighted_Solution {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String str   = scan.next();

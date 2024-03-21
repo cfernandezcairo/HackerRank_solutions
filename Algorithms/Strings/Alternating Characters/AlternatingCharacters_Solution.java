@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 // Each time we have 2 consecutive characters that are the same, we can delete 1 of them
 
-public class Solution {
+public class AlternatingCharacters_Solution {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int T = scan.nextInt();
