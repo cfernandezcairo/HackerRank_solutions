@@ -45,16 +45,34 @@ public class SolutionFlippingMatrix {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        int n = Integer.parseInt(bufferedReader.readLine().trim());
+        int q = Integer.parseInt(bufferedReader.readLine().trim());
 
-        List<Integer> ar = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-                .map(Integer::parseInt)
-                .collect(toList());
+        IntStream.range(0, q).forEach(qItr -> {
+            try {
+                int n = Integer.parseInt(bufferedReader.readLine().trim());
 
-        int result = ResultFlippingMatrix.sockMerchant(n, ar);
+                List<List<Integer>> matrix = new ArrayList<>();
 
-        bufferedWriter.write(String.valueOf(result));
-        bufferedWriter.newLine();
+                IntStream.range(0, 2 * n).forEach(i -> {
+                    try {
+                        matrix.add(
+                                Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+                                        .map(Integer::parseInt)
+                                        .collect(toList())
+                        );
+                    } catch (IOException ex) {
+                        throw new RuntimeException(ex);
+                    }
+                });
+
+                int result = ResultFlippingMatrix.flippingMatrix(matrix);
+
+                bufferedWriter.write(String.valueOf(result));
+                bufferedWriter.newLine();
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
 
         bufferedReader.close();
         bufferedWriter.close();
