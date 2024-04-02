@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 //  Time Complexity: O(n)
 // Space Complexity: O(n)
-public class Solution {
+public class Solution_IceCreamParior {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int t = scan.nextInt();

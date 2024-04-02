@@ -1,13 +1,12 @@
 // github.com/RodneyShag
 
 import java.util.Scanner;
-import java.util.ArrayList;
 
 // Tips:
 // - Instead of using a "boolean[][] visited" array, we alter our original grid
 // - Dont create a 2-D "Point" or "Cell" class. It's not necessary.
 
-public class Solution {
+public class Solution_ConnectedCellsInGrid {
     private static int rows; // here for convenience
     private static int cols; // here for convenience
     
