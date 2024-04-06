@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Solution {
+public class BidimensionalArraySolution {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

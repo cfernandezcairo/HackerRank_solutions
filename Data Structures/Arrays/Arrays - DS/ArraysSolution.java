@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Solution {
+public class ArraysSolution {
     public static void main(String[] args) {
         /* Save input */
         Scanner scan = new Scanner(System.in);

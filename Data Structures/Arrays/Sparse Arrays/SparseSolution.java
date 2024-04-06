@@ -3,7 +3,7 @@
 import java.util.Scanner;
 import java.util.HashMap;
 
-public class Solution {
+public class SparseSolution {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int N  = scan.nextInt();

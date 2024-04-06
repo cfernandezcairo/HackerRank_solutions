@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 //  Time Complexity: O(n + m)
 // Space Complexity: O(n)
-public class Solution {
+public class CrushSolution {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int N = scan.nextInt();
