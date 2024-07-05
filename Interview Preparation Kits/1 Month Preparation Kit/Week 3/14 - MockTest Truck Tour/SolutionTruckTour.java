@@ -21,7 +21,6 @@ class ResultTruckTour {
 
         int sumAcc = 0;
         int index = 0;
-        List<Integer> currentPump = null;
         int i = 0;
         
         while (i < petrolpumps.size()) {
