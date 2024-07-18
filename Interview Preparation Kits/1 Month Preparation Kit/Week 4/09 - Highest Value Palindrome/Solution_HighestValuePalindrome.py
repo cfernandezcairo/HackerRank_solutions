@@ -52,18 +52,18 @@ def highestValuePalindrome(s, n, k):
         i=0
         j=n-1
 
+        ## iterate searching processed items to maximize thems
         while i<=j and k>0:
             if s[i]!='9':
                 if processed[i] or processed[j]:
                     s[i]='9'
                     s[j]='9'
                     k=k-1
-                else:
+                else: ## make 2 changes if item is not processed and exist change posibility
                     if k>1:
                         s[i]='9'
                         s[j]='9'
                         k=k-2
-
             i=i+1
             j=j-1
 

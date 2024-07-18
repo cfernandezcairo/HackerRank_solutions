@@ -20,11 +20,11 @@ class Result_LilyHomeWork {
 
         int sortedSwaps = 0;
         int[] homeworkArray = new int[arraySize];
-        Map<Integer,Integer> originalHW = new HashMap<>();
+        Map<Integer,Integer> homeworkMap = new HashMap<>();
 
         int sortedReverseSwaps = 0;
         int[] homeworkArray2nd = new int[arraySize];
-        Map<Integer,Integer> originalHW2nd = new HashMap<>();
+        Map<Integer,Integer> homeworkMap2nd = new HashMap<>();
 
         //Initialize our arrays and maps
         Integer[] homeworkArraySorted = new Integer[arraySize];
@@ -32,10 +32,10 @@ class Result_LilyHomeWork {
             homeworkArraySorted[i] = arr.get(i);
 
             homeworkArray[i] = homeworkArraySorted[i];
-            homeworkArray2nd[i] = homeworkArraySorted[i];
+            homeworkMap.put(homeworkArray[i],i);
 
-            originalHW.put(homeworkArray[i],i);
-            originalHW2nd.put(homeworkArray2nd[i],i);
+            homeworkArray2nd[i] = homeworkArraySorted[i];
+            homeworkMap2nd.put(homeworkArray2nd[i],i);
         }
 
         Arrays.sort(homeworkArraySorted);//Sort the input ascending
@@ -44,11 +44,11 @@ class Result_LilyHomeWork {
 
                 //swap the element from homework to the right position
                 int tmp = homeworkArray[i];
-                homeworkArray[i] = homeworkArray[originalHW.get(homeworkArraySorted[i])];
-                homeworkArray[originalHW.get(homeworkArraySorted[i])] = tmp;
+                homeworkArray[i] = homeworkArray[homeworkMap.get(homeworkArraySorted[i])];
+                homeworkArray[homeworkMap.get(homeworkArraySorted[i])] = tmp;
 
                 //Update index after swap
-                originalHW.put(tmp,originalHW.get(homeworkArraySorted[i]));
+                homeworkMap.put(tmp,homeworkMap.get(homeworkArraySorted[i]));
                 sortedSwaps++;
             }
         }
@@ -59,11 +59,11 @@ class Result_LilyHomeWork {
 
                 //swap the element from homework to the right position
                 int tmp = homeworkArray2nd[i];
-                homeworkArray2nd[i] = homeworkArray2nd[originalHW.get(homeworkArraySorted[i])];
-                homeworkArray2nd[originalHW2nd.get(homeworkArraySorted[i])] = tmp;
+                homeworkArray2nd[i] = homeworkArray2nd[homeworkMap.get(homeworkArraySorted[i])];
+                homeworkArray2nd[homeworkMap2nd.get(homeworkArraySorted[i])] = tmp;
 
                 //Update index after swap
-                originalHW2nd.put(tmp, originalHW2nd.get(homeworkArraySorted[i]));
+                homeworkMap2nd.put(tmp, homeworkMap2nd.get(homeworkArraySorted[i]));
                 sortedReverseSwaps++;
             }
         }
